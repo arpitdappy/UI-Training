@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Sheet</title>
+</head>
+
+<body class="body">
+    <!-- Header section begins-->
+    <header class="header-nav">
+
+        <img src="images/argillogo.png" alt="Argil DX Logo" title="Argil DX Logo">
+
+        <span class="nav-section">
+            <img src="images/user-icon.png" alt="User icon" title="User icon">
+            <a role="button" tabindex="1" id="switch-user" title="Switch to Manager View">
+                <p class="nav-text">Switch to Manager View</p>
+            </a>
+        </span>
+
+        <span class="nav-section">
+            <p class="nav-text">|</p>
+            <a role="button" tabindex="1" id="notification-icon" title="Notifications">
+                <img src="images/notification-icon.png" alt="notification-icon">
+            </a>
+            <a role="button" tabindex="1" id="setting-icon" title="Setting">
+                <img src="images/setting-icon.png" alt="setting-icon">
+            </a>
+            <a role="button" tabindex="1" id="profile-icon" title="Profile">
+                <img src="images/profile-icon.png" alt="profile-icon">
+            </a>
+        </span>
+
+    </header>
+    <!-- Header section ends-->
+
+
+    <main class="main">
+        <div class="page-title">
+            <p>Dashboard</p>
+        </div>
+
+        <div>
+            <button type="submit"><img src="images/submit-icon.png" alt="submit icon"> Submit timesheet</button>
+        </div>
+
+        <section class="time-spent-section">
+            <div class="projects-details-and-filters">
+
+                <span class="project-details">
+                    <div>
+                        <img src="images/clock-icon.png" alt="clock-icon">
+                        <p class="projects-text"><span class="project-priority-text">04</span> projects</p>
+                    </div>
+                    <hr class="seperator">
+                    <div>
+                        <img src="images/projects-icon.png" alt="projects-icon">
+                        <p class="projects-text"><span class="project-priority-text">37</span> Hours spent this week</p>
+                    </div>
+                </span>
+
+                <span class="project-filters">
+                    <div>
+                        <img src="images/projects-with-clock-icon.png" alt="Projets with clock">
+                        <p class="projects-text"><span class="project-priority-text">Projects</span> worked on this
+                            week</p>
+                    </div>
+
+                    <div>
+                        <!-- js will render the graph here along with legends-->
+                    </div>
+                </span>
+
+            </div>
+
+            <div class="timesheet-section">
+                <p class="section-heading">Timesheet</p>
+                <select name="timesheet-duration" id="timesheet-duration">
+                    <option class="view-duration-text" value="day" class="">Day view</option>
+                    <option class="view-duration-text" value="month">Month view</option>
+                    <option class="view-duration-text" value="quaterly">Quater view</option>
+                </select>
+
+                <input type="search" name="search-timesheet" id="search-timesheet" placeholder="&#x1F50D; search">
+
+                <button class="add-task-button">&plus; Add task</button>
+
+                <p class="section-heading">Today's Timesheet(3)</p>
+                <p class="section-subheading">5th Feb, 2019</p>
+
+                <div class="todays-tasks">
+
+                    <div class="task-details">
+                        <p class="project-name"><span class="project-colour">|</span>Bajaj Finance</p>
+                        <p class="task-description"><span><img src="images/sang-glass.png" alt="sandglass-icon"></span>Time
+                            spent</p>
+                        <img src="images/message-icon.jpg" alt="message-icon">
+                        <p class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
+                            Finance.</p>
+                        <p class="task-description">04:00pm-07:00pm</p>
+                        <a href="#" id="edit-task"><img src="images/edit-icon.png" alt="edit-icon"></a>
+                        <a href="#" id="show-task-details"><img src="images/three-dots.png" alt="three-dots"></a>
+                    </div>
+
+                    <div class="task-details">
+                        <p class="project-name"><span class="project-colour">|</span>Bajaj Finance</p>
+                        <p class="task-description"><span><img src="images/sang-glass.png" alt="sandglass-icon"></span>Time
+                            spent</p>
+                        <img src="images/message-icon.jpg" alt="message-icon">
+                        <p class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
+                            Finance.</p>
+                        <p class="task-description">04:00pm-07:00pm</p>
+                        <a href="#" id="edit-task"><img src="images/edit-icon.png" alt="edit-icon"></a>
+                        <a href="#" id="show-task-details"><img src="images/three-dots.png" alt="three-dots"></a>
+                    </div>
+
+                    <div class="task-details">
+                        <p class="project-name"><span class="project-colour">|</span>Bajaj Finance</p>
+                        <p class="task-description"><span><img src="images/sang-glass.png" alt="sandglass-icon"></span>Time
+                            spent</p>
+                        <img src="images/message-icon.jpg" alt="message-icon">
+                        <p class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
+                            Finance.</p>
+                        <p class="task-description">04:00pm-07:00pm</p>
+                        <a href="#" id="edit-task"><img src="images/edit-icon.png" alt="edit-icon"></a>
+                        <a href="#" id="show-task-details"><img src="images/three-dots.png" alt="three-dots"></a>
+                    </div>
+                    <div class="task-details">
+                        <p class="project-name"><span class="project-colour">|</span>Bajaj Finance</p>
+                        <p class="task-description"><span><img src="images/sang-glass.png" alt="sandglass-icon"></span>Time
+                            spent</p>
+                        <img src="images/message-icon.jpg" alt="message-icon">
+                        <p class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
+                            Finance.</p>
+                        <p class="task-description">04:00pm-07:00pm</p>
+                        <a href="#" id="edit-task"><img src="images/edit-icon.png" alt="edit-icon"></a>
+                        <a href="#" id="show-task-details"><img src="images/three-dots.png" alt="three-dots"></a>
+                    </div>
+
+                </div>
+
+                <p class="section-heading">Yesterday's Timesheet(3)</p>
+                <p class="section-subheading">4th Feb, 2019</p>
+
+                <div class="yesterdays-tasks">
+
+                    <div class="task-details">
+                        <p class="project-name"><span class="project-colour">|</span>Bajaj Finance</p>
+                        <p class="task-description"><span><img src="images/sang-glass.png" alt="sandglass-icon"></span>Time
+                            spent</p>
+                        <img src="images/message-icon.jpg" alt="message-icon">
+                        <p class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
+                            Finance.</p>
+                        <p class="task-description">04:00pm-07:00pm</p>
+                        <a href="#" id="edit-task"><img src="images/edit-icon.png" alt="edit-icon"></a>
+                        <a href="#" id="show-task-details"><img src="images/three-dots.png" alt="three-dots"></a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Side bar section
+            Aside tag is deliberately not used here because as per MDN documentation links in aside should be tangently related to text in the main section
+        -->
+        <section class="notification-section">
+            <p class="section-heading">My Notifications</p>
+            <div class="notifications">
+
+                <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
+                <button class="due-today">Due today</button>
+                <p class="notification-title">Submit timesheet</p>
+                <p class="task-recipent">To :</p>
+                <p>Ankur Mittal</p>
+                <span><a href="#" class="notification-deatil-button"></a>></span>
+                <hr>
+
+                <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
+                <button class="due-later">Due in 2 days</button>
+                <p class="notification-title">Submit timesheet</p>
+                <p class="task-recipent">To :</p>
+                <p>Ankur Mittal</p>
+                <span><a href="#" class="notification-deatil-button"></a>></span>
+                <hr>
+
+                <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
+                <button>Due in 2 days</button>
+                <p class="notification-title">Submit timesheet</p>
+                <p class="task-recipent">To :</p>
+                <p>Ankur Mittal</p>
+                <span><a href="#" class="notification-deatil-button"></a>></span>
+                <hr>
+
+                <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
+                <button class="due-later">Due in 2 days</button>
+                <p class="notification-title">Submit timesheet</p>
+                <p class="task-recipent">To :</p>
+                <p>Ankur Mittal</p>
+                <span><a href="#" class="notification-deatil-button"></a>></span>
+                <hr>
+
+                <input type="radio" class="notification-checkbox" name="task-id" value="task-id" checked>
+                <button class="done">Done</button>
+                <p class="notification-title task-completed">Submit timesheet</p>
+                <p class="task-recipent task-completed">To :</p>
+                <p>Ankur Mittal</p>
+                <span><a href="#" class="notification-deatil-button"></a>></span>
+
+            </div>
+
+            <div class="task-accomplished">
+                <img src="images/party-pooer-orange.png" alt="party popper orange" class="party-popper left-image">
+                <img src="images/party-pooer-pink.png" alt="party popper pink" class="party-popper right-image">
+                <p class="section-heading">Congratulation!</p>
+                <p class="task-details-text">You have completed 9 tasks this week</p>
+            </div>
+        </section>
+        <!--Sidebar ends here-->
+    </main>
+</body>
+
+</html>
