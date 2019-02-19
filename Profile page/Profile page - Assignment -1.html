@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>User Profile</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -11,117 +12,142 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="images/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
 </head>
-<body class="body" background="images/background.jpg">
+
+<body class="body">
 
     <!-- Nav section begins-->
-    <nav><p><a href="#page-heading" title="Home">Home</a> | <a href="#user-details" title="About user">About</a> | <a href="#contact-us" title="Contact User">Contact User</a></p></nav>
+    <nav>
+        <p class="nav-bar">
+            <a href="#page-heading" title="Home">Home</a> |
+            <a href="#user-details" title="About user">About</a> |
+            <a href="#contact-us" title="Contact User">Contact User</a>
+        </p>
+    </nav>
     <!-- Nav section ends-->
-    <main>
-    <center>
-    <h1 class="page-title" id="page-heading">User Profile</h1>
-    
-    <!--Image of the user-->
-    <span class="profile-picture">
-        <img src="images/android-chrome-512x512.png" alt="Profile Picture" title="User-image">
-    </span>
-    
-    <!--details of the user-->
-    <span class="about" id="user-details">
-        <h2 class="section-heading">Personal Details</h2>
-        <ul class="user-details-list">
-            <li><p><strong>Name</strong>:Arpit Rathi</p></li>
-            <li><p><strong>Nick Name</strong>:Hugsy</p></li>
-            <li><p><strong>DOB</strong>:8<sup>th</sup> May 1996</p></li>
-            <li><p><strong>Gender</strong>: Male </p></li>
-            <li><p><strong>Username</strong>:Arpitdappy</p></li>
-            <li><p><strong>Profession</strong>:Space cowboy</p></li>
-        </ul>
-    </span>
+    <main class="main">
+
+        <h1 class="page-title" id="page-heading">User Profile</h1>
+
+        <!--Image of the user-->
+        <span class="profile-picture">
+            <img src="images/android-chrome-512x512.png" alt="Profile Picture" title="User-image">
+        </span>
+
+        <!--details of the user-->
+        <div class="about" id="user-details">
+            <h2 class="section-heading">Personal Details</h2>
+            <ul class="user-details-list">
+                <li>
+                    <p><span class="user-property">Name</span>:Arpit Rathi</p>
+                </li>
+                <li>
+                    <p><span class="user-property">Nick Name</span>:Hugsy</p>
+                </li>
+                <li>
+                    <p><span class="user-property">DOB</span>:8<sup>th</sup> May 1996</p>
+                </li>
+                <li>
+                    <p><span class="user-property">Gender</span>: Male </p>
+                </li>
+                <li>
+                    <p><span class="user-property">Username</span>:Arpitdappy</p>
+                </li>
+                <li>
+                    <p><span class="user-property">Profession</span>:Space cowboy</p>
+                </li>
+            </ul>
+        </div>
         <h2 class="section-heading">Characterstics Rating</h2>
         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D</p>
-<div >
-	<span>&nbsp;</span>
-	<span>
-		<div>
-			<span>
-				<strong>Sarcasm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-			</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		</div>
-		<div>
-			<span>
-				<strong>Adventure Sports</strong>
-			</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		</div>
-		<div>
-			<span>
-				<strong>Writing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-			</span>
-			<span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		</div>
-		<div>
-			<span>
-				<strong>Rapping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-			</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		</div>
-    </span>
-</center>
+        <div>
+            <span>&nbsp;</span>
+            <span>
+                <div>
+                    <span>
+                        <strong>Sarcasm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    </span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <div>
+                    <span>
+                        <strong>Adventure Sports</strong>
+                    </span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <div>
+                    <span>
+                        <strong>Writing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    </span>
+                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <div>
+                    <span>
+                        <strong>Rapping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+                    </span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+            </span>
 
-    <!--Section to contact the user-->
-    <aside class="contact-us">
-    <h2>Ping Arpit</h2>
-    <form action="" method="get" class="contact-form">
-        <div>
-          <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div>
-          <label for="email">E-mail: </label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-            <label for="userType">User Type: </label>   
-            <input type="radio" id="huey" name="drone" value="huey"
-            checked>
-     <label for="human">Human</label>
-     <input type="radio" id="bot" name="drone" value="bot">
-  <label for="bot">Bot</label>
-        </div>
-        <div>
-            <label for="message">Message: </label>
-            <textarea name="message" id="message"> </textarea>
-        </div>
-        <div>
-          <input type="submit" value="Ping!">
-        </div>
-      </form>
-      
-        <div><iframe width="50%" height="300" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.5024954,77.4036866&amp;q=1st%20Floor%2C%20Riana%20Tower%2C%20Plot%20No.%20111%2C%20Sector%20136%2C%20Noida%2C%20Uttar%20Pradesh%20201304+(Argil%20DX)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />    <div>
-        </aside>
-    
+            <!--Section to contact the user-->
+            <aside id="contact-us">
+                <h2>Ping Arpit</h2>
+                <form action="" method="get" class="contact-form">
+                    <div>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="userType">User Type: </label>
+                        <input type="radio" id="huey" name="drone" value="huey" checked>
+                        <label for="human">Human</label>
+                        <input type="radio" id="bot" name="drone" value="bot">
+                        <label for="bot">Bot</label>
+                    </div>
+                    <div>
+                        <label for="message">Message: </label>
+                        <textarea name="message" id="message"> </textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Ping!">
+                    </div>
+                </form>
 
-</main>
+                <div class="map">
+                    <h3 class="map-heading">Location via map</h3>
+                    <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.5024954,77.4036866&amp;q=1st%20Floor%2C%20Riana%20Tower%2C%20Plot%20No.%20111%2C%20Sector%20136%2C%20Noida%2C%20Uttar%20Pradesh%20201304+(Argil%20DX)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
+                <div>
+            </aside>
 
-<!--Footer Begins-->
-<footer>
-        <marquee behavior="slide" direction="right">This page is under maintaince phase, keep visiting for exiting updates.</marquee>
-</footer>
-<!--Footer Ends-->
+
+    </main>
+
+    <!--Footer Begins-->
+    <footer>
+        <marquee behavior="slide" class="maintaince-notice" direction="right">This page is under maintaince phase, keep visiting for exiting
+            updates.</marquee>
+    </footer>
+    <!--Footer Ends-->
 
 </body>
+
 </html>
