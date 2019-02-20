@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <!-- Header section begins-->
     <header class="header-nav">
 
@@ -19,22 +19,29 @@
 
 
         <span class="nav-section">
-            <span class="nav-section">
-                <img src="images/user-icon.png" alt="User icon" title="User icon">
+
+                <span>
+                    <img src="images/layer-14.png" alt="User icon" title="User icon">
+                </span>
                 <a role="button" tabindex="1" id="switch-user" title="Switch to Manager View">
-                    <div class="nav-text">Switch to Manager View</div>
+                    Switch to Manager View
+                </a>
+            <span class="nav-text">|</span>
+            <span><a role="button" tabindex="1" id="notification-icon" title="Notifications">
+                    <img src="images/bell.png" alt="notification-icon">
                 </a>
             </span>
-            <div class="nav-text">|</div>
-            <a role="button" tabindex="1" id="notification-icon" title="Notifications">
-                <img src="images/notification-icon.png" alt="notification-icon">
-            </a>
-            <a role="button" tabindex="1" id="setting-icon" title="Setting">
-                <img src="images/setting-icon.png" alt="setting-icon">
-            </a>
-            <a role="button" tabindex="1" id="profile-icon" title="Profile">
-                <img src="images/profile-icon.png" alt="profile-icon">
-            </a>
+            <span>
+                <a role="button" tabindex="1" id="setting-icon" title="Setting">
+                    <img src="images/settings.png" alt="setting-icon">
+                </a>
+            </span>
+            <span>
+                <a role="button" tabindex="1" id="profile-icon" title="Profile">
+                    <img src="images/user.png" alt="profile-icon">
+                </a>
+            </span>
+
         </span>
 
     </header>
@@ -51,7 +58,7 @@
     </div>
     <main class="main">
         <section class="time-spent-section data-sections">
-            <span class="project-details rounded-rectangle">
+            <article class="project-details rounded-rectangle">
                 <div class="projects-text">
                     <span><img src="images/clock-icon.png" alt="clock-icon"></span>
                     <span><span class="project-priority-text">04</span> projects</span>
@@ -67,9 +74,9 @@
                         </span>
                     </div>
                 </div>
-            </span>
+            </article>
 
-            <span class="project-filters rounded-rectangle">
+            <article class="project-filters rounded-rectangle">
                 <div>
                     <span><img src="images/projects-with-clock-icon.png" alt="Projets with clock"></span>
                     <span class="projects-text"><span class="project-priority-text">Projects</span> worked on from
@@ -79,7 +86,7 @@
                 <div>
                     <!-- js will render the graph here along with legends-->
                 </div>
-            </span>
+            </article>
 
         </section>
 
@@ -104,42 +111,45 @@
 
                 <div class="task-details">
                     <div class="project-name"><span class="project-colour">|</span>Bajaj Finance</div>
-                    <div class="task-description time-per-task"><span><img src="images/layer-12.png" alt="sandglass-icon"></span>Time
+                    <div class="task-description time-per-task"><span><img src="images/layer-12.png"
+                                alt="sandglass-icon"></span>Time
                         spent</div>
                     <img src="images/message-icon.jpg" alt="message-icon">
                     <div class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
                         Finance.</div>
                     <div class="task-description time-per-task">04:00pm-07:00pm</div>
                     <span>
-                    <a href="#" clsass="edit-task"><img src="images/edit.png" alt="edit-icon"></a>
+                        <a href="#" clsass="edit-task"><img src="images/edit.png" alt="edit-icon"></a>
                     </span>
                     <span>
-                    <a href="#" class="show-task-details"><img src="images/circle.png" alt="three-dots"></a>
-                </span>
+                        <a href="#" class="show-task-details"><img src="images/circle.png" alt="three-dots"></a>
+                    </span>
                 </div>
 
                 <div class="task-details">
                     <div class="project-name"><span class="project-colour">|</span>Bajaj Finance</div>
-                    <div class="task-description time-per-task"><span><img src="images/layer-12.png" alt="sandglass-icon"></span>Time
+                    <div class="task-description time-per-task"><span><img src="images/layer-12.png"
+                                alt="sandglass-icon"></span>Time
                         spent</div>
                     <img src="images/message-icon.jpg" alt="message-icon">
                     <div class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
                         Finance.</div>
                     <div class="task-description time-per-task">04:00pm-07:00pm</div>
                     <span>
-                    <a href="#" class="edit-task"><img src="images/edit.png" alt="edit-icon"></a>
+                        <a href="#" class="edit-task"><img src="images/edit.png" alt="edit-icon"></a>
                     </span>
                     <span>
-                    <a href="#" class="show-task-details"><img src="images/circle.png" alt="three-dots"></a>
-                </span>
+                        <a href="#" class="show-task-details"><img src="images/circle.png" alt="three-dots"></a>
+                    </span>
                 </div>
 
                 <div class="task-details">
                     <div class="project-name"><span class="project-colour">|</span>Bajaj Finance</div>
-                    <div class="task-description time-per-task"><span><img src="images/layer-12.png" alt="sandglass-icon"></span>Time
+                    <div class="task-description time-per-task"><span><img src="images/layer-12.png"
+                                alt="sandglass-icon"></span>Time
                         spent</div>
-                        <div class="task-description"><img src="images/message-icon.jpg" alt="message-icon">
-                    Working on Redesigning the UX of Loan providing platform for Bajaj
+                    <div class="task-description"><img src="images/message-icon.jpg" alt="message-icon">
+                        Working on Redesigning the UX of Loan providing platform for Bajaj
                         Finance.</div>
                     <div class="task-description time-per-task">04:00pm-07:00pm</div>
                     <a href="#" class="edit-task"><img src="images/edit.png" alt="edit-icon"></a>
@@ -147,7 +157,8 @@
                 </div>
                 <div class="task-details">
                     <div class="project-name"><span class="project-colour">|</span>Bajaj Finance</div>
-                    <div class="task-description time-per-task"><span><img src="images/layer-12.png" alt="sandglass-icon"></span>Time
+                    <div class="task-description time-per-task"><span><img src="images/layer-12.png"
+                                alt="sandglass-icon"></span>Time
                         spent</div>
                     <img src="images/message-icon.jpg" alt="message-icon">
                     <div class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
@@ -166,7 +177,8 @@
 
                 <div class="task-details">
                     <div class="project-name"><span class="project-colour">|</span>Bajaj Finance</div>
-                    <div class="task-description time-per-task"><span><img src="images/layer-12.png" alt="sandglass-icon"></span>Time
+                    <div class="task-description time-per-task"><span><img src="images/layer-12.png"
+                                alt="sandglass-icon"></span>Time
                         spent</div>
                     <img src="images/message-icon.jpg" alt="message-icon">
                     <div class="task-description">Working on Redesigning the UX of Loan providing platform for Bajaj
@@ -196,7 +208,8 @@
                 <div>Ankur Mittal</div>
                 <span><a href="#" class="notification-deatil-button"></a>></span>
                 <div class="horizontal-rule"></div>
-
+            </div>
+            <div class="notifications">
                 <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
                 <div class="due-later">Due in 2 days</div>
                 <div class="notification-title">Submit timesheet</div>
@@ -204,8 +217,8 @@
                 <div>Ankur Mittal</div>
                 <span><a href="#" class="notification-deatil-button"></a>></span>
                 <div class="horizontal-rule"></div>
-
-
+        </div>
+                <div class="notifications">
                 <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
                 <div>Due in 2 days</div>
                 <div class="notification-title">Submit timesheet</div>
@@ -213,7 +226,8 @@
                 <div>Ankur Mittal</div>
                 <span><a href="#" class="notification-deatil-button"></a>></span>
                 <div class="horizontal-rule"></div>
-
+                </div>
+                <div class="notifications">
                 <input type="radio" class="notification-checkbox" name="task-id" value="task-id">
                 <div class="due-later">Due in 2 days</div>
                 <div class="notification-title">Submit timesheet</div>
@@ -221,7 +235,8 @@
                 <div>Ankur Mittal</div>
                 <span><a href="#" class="notification-deatil-button"></a>></span>
                 <div class="horizontal-rule"></div>
-
+            </div>
+        <div class="notifications">
                 <input type="radio" class="notification-checkbox" name="task-id" value="task-id" checked>
                 <div class="done">Done</div>
                 <div class="notification-title task-completed">Submit timesheet</div>
@@ -232,9 +247,9 @@
             </div>
 
             <div class="task-accomplished">
-                <img src="images/divarty-pooer-orange.png" alt="party popper orange" class="party-popper left-image">
-                <img src="images/divarty-pooer-pink.png" alt="party popper pink" class="party-popper right-image">
-                <div class="section-heading">Congratulation!</div>
+                <img src="images/layer-9.png" alt="party popper orange" class="party-popper left-image">
+                <img src="images/layer-10.png" alt="party popper pink" class="party-popper right-image">
+                <div class="task-details-text section-heading">Congratulation!</div>
                 <div class="task-details-text">You have completed 9 tasks this week</div>
             </div>
         </section>

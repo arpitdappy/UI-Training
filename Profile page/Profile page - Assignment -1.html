@@ -21,9 +21,9 @@
     <!-- Nav section begins-->
     <nav>
         <p class="nav-bar">
-            <a href="#page-heading" title="Home">Home</a> |
-            <a href="#user-details" title="About user">About</a> |
-            <a href="#contact-us" title="Contact User">Contact User</a>
+            <span class="nav-element"> <a href="#page-heading" title="Home">Home</a> </span>|
+            <span class="nav-element"> <a href="#user-details" title="About user">About</a> </span>|
+            <span class="nav-element"> <a href="#contact-us" title="Contact User">Contact User</a></span>
         </p>
     </nav>
     <!-- Nav section ends-->
@@ -61,89 +61,90 @@
             </ul>
         </div>
         <h2 class="section-heading">Characterstics Rating</h2>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D</p>
-        <div>
-            <span>&nbsp;</span>
-            <span>
-                <div>
-                    <span>
-                        <strong>Sarcasm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                    </span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <div class="divTable">
+            <div class="divTableBody">
+                <div class="divTableRow">
+                    <div class="divTableCell">&nbsp;</div>
+                    <div class="divTableCell">Not his Cup of tea</div>
+                    <div class="divTableCell">Can but should not</div>
+                    <div class="divTableCell">Keep trying</div>
+                    <div class="divTableCell">Killing it</div>
                 </div>
-                <div>
-                    <span>
-                        <strong>Adventure Sports</strong>
-                    </span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="divTableRow">
+                    <div class="divTableCell">Sarcasm</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;✅</div>
+                    <div class="divTableCell">&nbsp;❌</div>
                 </div>
-                <div>
-                    <span>
-                        <strong>Writing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                    </span>
-                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="divTableRow">
+                    <div class="divTableCell">Adventure Sports</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;✅</div>
                 </div>
-                <div>
-                    <span>
-                        <strong>Rapping&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
-                    </span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>✅&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                    <span>❌&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="divTableRow">
+                    <div class="divTableCell">Writing</div>
+                    <div class="divTableCell">&nbsp;✅</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
                 </div>
-            </span>
+                <div class="divTableRow">
+                    <div class="divTableCell">Rapping</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;✅</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                    <div class="divTableCell">&nbsp;❌</div>
+                </div>
+            </div>
+        </div>
 
-            <!--Section to contact the user-->
-            <aside id="contact-us">
-                <h2>Ping Arpit</h2>
-                <form action="" method="get" class="contact-form">
-                    <div>
-                        <label for="name">Name: </label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail: </label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="userType">User Type: </label>
-                        <input type="radio" id="huey" name="drone" value="huey" checked>
-                        <label for="human">Human</label>
-                        <input type="radio" id="bot" name="drone" value="bot">
-                        <label for="bot">Bot</label>
-                    </div>
-                    <div>
-                        <label for="message">Message: </label>
-                        <textarea name="message" id="message"> </textarea>
-                    </div>
-                    <div>
-                        <input type="submit" value="Ping!">
-                    </div>
-                </form>
-
-                <div class="map">
-                    <h3 class="map-heading">Location via map</h3>
-                    <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.5024954,77.4036866&amp;q=1st%20Floor%2C%20Riana%20Tower%2C%20Plot%20No.%20111%2C%20Sector%20136%2C%20Noida%2C%20Uttar%20Pradesh%20201304+(Argil%20DX)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><br />
+        <!--Section to contact the user-->
+        <aside id="contact-us">
+            <h2>Ping Arpit</h2>
+            <form action="" method="get" class="contact-form">
                 <div>
-            </aside>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="userType">User Type: </label>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="human">Human</label>
+                    <input type="radio" id="bot" name="drone" value="bot">
+                    <label for="bot">Bot</label>
+                </div>
+                <div>
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message"> </textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Ping!">
+                </div>
+            </form>
+
+            <div class="map">
+                <h3 class="map-heading">Location via map</h3>
+                <iframe
+                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=28.5024954,77.4036866&amp;q=1st%20Floor%2C%20Riana%20Tower%2C%20Plot%20No.%20111%2C%20Sector%20136%2C%20Noida%2C%20Uttar%20Pradesh%20201304+(Argil%20DX)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                    frameborder="0" class="map-location" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div><br />
+            <div>
+        </aside>
 
 
     </main>
 
     <!--Footer Begins-->
     <footer>
-        <marquee behavior="slide" class="maintaince-notice" direction="right">This page is under maintaince phase, keep visiting for exiting
+        <marquee behavior="slide" class="maintaince-notice" direction="right">This page is under maintaince phase, keep
+            visiting for exiting
             updates.</marquee>
     </footer>
     <!--Footer Ends-->
