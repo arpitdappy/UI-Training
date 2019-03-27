@@ -1,151 +1,1145 @@
-
-.body {
-    background: #eaeaea;
-    font-size: 18px;
-    font-family: Poppins;
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+html{
+     font-size : 16px; 
+ }
+/* Smartphones (portrait and landscape) ---------- 
+@media screen and (min-width: 320px) and (max-width: 480px){ */
 
-.task-description{
-    font-size: 0.88rem;
-}
+    .body {
+        background: #eaeaea;
+        font-family: Poppins;
+    }
+    
+    .task-description {
+        font-size: 0.88rem;
+        display: flex;
+    }
+    
+    .header-nav {
+        padding-left: 2.38rem;
+        height: 2.9rem;
+        background-color: #ffffff;
+    }
+    
+    .nav-section {
+        float: right;
+        display: flex;
+        padding-right: 1.738rem;
+        padding-top: 0.4rem;
+    }
+    
+    .page-title {
+        padding: 1rem 2.38rem;
+        background-color: #101b33;
+    }
+    
+    .page-title-text {
+        font-weight: 500;
+        color: #e9edf0;
+    }
+    
+    .submit-timesheet-button {
+        border-radius: 21.5px;
+        box-shadow: 0.2px 3px 16.4px 1.6px rgba(128, 128, 128, 0.4);
+        background-color: #00aacb;
+        float: right;
+        font-size: 0.88rem;
+        font-family: poppins;
+        color: white;
+        font-weight: normal;
+        border: transparent;
+        padding: 0.55rem 0.95rem;
+        display: flex;
+    }
+    
+    .main {
+        padding: 1.91rem;
+        font-family: Poppins;
+        color: #30363b;
+    }
+    
+    .project-details {
+        float: left;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        background-color: #ffffff;
+        width: 16rem;
+        height: 5.54rem;
+        padding: 1rem;
+    }
+    
+    .projects-text {
+        font-size: 1rem;
+        height: 2.97rem;
+        padding-left: 0.714rem;
+    }
+    
+    .project-priority-text {
+        font-size: 1.34rem;
+        font-weight: 500;
+    }
+    
+    .hr-seperator {
+        border-top: 1px solid #eaeaea;
+        margin: 0 2.22rem;
+    }
+    
+    .project-filters {
+        margin-left: 0.89rem;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        float: right;
+        width: 38.44rem;
+        background: #fff;
+        height: 5.54rem;
+        padding: 1rem;
+    }
+    
+    .timesheet-section {
+        margin-top: 1.34rem;
+        margin-right: 0.892rem;
+        background: #ffffff;
+        width: 57.1rem;
+        padding: 1.16rem;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .data-sections {
+        display: inline-block
+    }
+    
+    .section-heading {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .rounded-rectangle {
+        border-radius: 5px;
+    }
+    
+    .add-task-button {
+        color: #00aacb;
+        font-size: 0.77rem;
+        font-weight: 500;
+        background-color: #ffffff;
+        border-radius: 0.27rem;
+        border: solid 0.05rem #efebe8;
+        font-family: poppins;
+    }
+    
+    .timesheet-operations {
+        float: right;
+    }
+    
+    .task-details {
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        padding: 0 1.11rem;
+        padding-top: 1.11rem;
+        margin: 1.11rem 0;
+        position: relative;
+    }
+    
+    .edit-task, .show-task-details {
+        float: right;
+        top: 50%;
+    }
+    
+    .time-per-task {
+        font-size: 0.88rem;
+        padding-bottom: 1rem;
+        display: flex;
+    }
+    
+    .horizontal-rule {
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .notification-title {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    
+    .task-recipent {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .notifications {
+        background: #ffffff;
+        padding: 1.11rem;
+        min-height: 25.3rem;
+    }
+    
+    .notification-section {
+        width: 19.77rem;
+        float: right;
+    }
+    
+    .task-accomplished {
+        background-color: #f3fbfd;
+        border: solid 0.05rem #eaeaea;
+        position: relative;
+    }
+    
+    .task-details-text {
+        font-size: 0.88rem;
+    }
+    
+    .nav-logo {
+        float: left;
+        padding: 0.5rem 0;
+    }
+    
+    .nav-bar-item {
+        padding: 0rem 0.5rem;
+    }
+    
+    .due-time {
+        border-radius: 0.8rem;
+        width: max-content;
+        padding: 0.4rem 0.8rem;
+        float: right;
+        font-size: 0.77rem;
+    }
+    
+    .due-today {
+        background: #ea4b36;
+    }
+    
+    .due-later {
+        background: #b7c0cf;
+    }
+    
+    .done {
+        background: #34b86f;
+    }
+    
+    .remaining-points {
+        font-size: 0.72rem;
+    }
+    
+    .party-popper-left {
+        left: 0.35rem;
+    }
+    
+    .party-popper-right {
+        right: 0.35rem;
+    }
+    
+    .party-popper-left, .party-popper-right {
+        position: absolute;
+        bottom: 0.35rem;
+    }
+    
+    .cumulative-task-status {
+        padding: 0.55rem 2.37rem;
+    }
+    
+    .task-completed {
+        text-decoration: line-through;
+    }
+    
+    .project-name {
+        font-size: 0.94rem;
+        font-weight: 600;
+        padding-bottom: 1rem;
+        display: inline-block;
+    }
+    
+    .date-range {
+        color: #3cbed7;
+    }
+    
+    #timesheet-duration {
+        color: #3cbed7;
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+    
+    .project-colour {
+        border-radius: 2.5px;
+        margin-right: 0.4rem;
+        margin-left: 1rem;
+    }
+    
+    .purple-color {
+        background-color: #9a52b6;
+        color: #9a52b6;
+    }
+    
+    .orange-color {
+        background-color: #f59900;
+        color: #f59900;
+    }
+    
+    .blue-color {
+        background-color: #2c97df;
+        color: #2c97df;
+    }
+    
+    .green-color {
+        background-color: #34b86f;
+        color: #34b86f;
+    }
+    
+    .today-section {
+        padding-top: 2rem;
+    }
+    
+    .section-subheading {
+        font-size: 0.72rem;
+    }
+    
+    .time-graph {
+        height: 0.61rem;
+        width: 7.4rem;
+        display: inline-block;
+    }
+    
+    .legends {
+        padding-top: 1rem;
+    }
+    
+    .graph-starting {
+        border-top-left-radius: 0.27rem;
+        border-bottom-left-radius: 0.27rem;
+    }
+    
+    .graph-ending {
+        border-top-right-radius: 0.27rem;
+        border-bottom-right-radius: 0.27rem;
+    }
+    
+    .legend-beginning {
+        margin-left: 0;
+    }
+    
+    .notification-content {
+        padding: 0.9rem 1.07rem;
+    }
+    
+    .notification-checkbox, .edit-task, .expand-task, .notification-detail-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    
+    .edit-task {
+        right: 2rem;
+    }
+    
+    .expand-task{
+        right: 1.5rem;
+    }
+    
+    .notification {
+        position: relative;
+    }
+    
+    .notification-checkbox {
+        left: 0;
+    }
+    
+    .nav-icons {
+        border-left: 0.1rem solid #eaeaea;
+        display: inline-block;
+        padding-left: 1rem;
+        padding-top: 0.25rem;
+    }
+    
+    .progress-bar{
+        border-radius: 3px;
+        background-image: linear-gradient(272deg, #24cced 1%, #1f7c8e);
+        height: 0.375rem;
+        width: 5.73rem;
+        display: inline-block;
+        margin-left: 2.3rem;
+    }
+    
+    .search{
+        padding-right: 1.587rem;
+    }
+    
+    .submit-icon{
+        padding-right: 0.35rem;
+    }
+    
+    .project-timeline{
+        display: flex;
+    }
+    
+    .message-icon{
+        padding-right: 0.412rem;
+    }
+    
+    .switch-view{
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
 
-.header-nav {
-    width: 100%;
-    height: 65px;
-    background-color: #ffffff;
-}
+    .task-detail{
+        width: 70%;
+    display: inline-block;
+    }
 
-img.nav-logo {
-    float: left;
-}
+    .task-time{
+        display: inline-block;
+        width: 20%;
+    }
 
-.nav-section {
-    float: right;
+    .task-operations{
+        display: inline-block;
+    width: 9%;
+    }
+/*
+Tablets, iPads (portrait and landscape) ----------
+@media screen and (min-width: 480px) and (max-width: 720px){
+    .body {
+        background: #eaeaea;
+        font-size: 12px;
+        font-family: Poppins;
+    }
+    
+    .task-description {
+        font-size: 0.88rem;
+        display: flex;
+    }
+    
+    .header-nav {
+        padding-left: 2.38rem;
+        height: 2.567rem;
+        background-color: #ffffff;
+    }
+    
+    .nav-section {
+        float: right;
+        display: flex;
+        padding-right: 1.738rem;
+        padding-top: 0.4rem;
+    }
+    
+    .page-title {
+        padding: 1rem 2.38rem;
+        background-color: #101b33;
+    }
+    
+    .page-title-text {
+        font-weight: 500;
+        color: #e9edf0;
+    }
+    
+    .submit-timesheet-button {
+        border-radius: 21.5px;
+        box-shadow: 0.2px 3px 16.4px 1.6px rgba(128, 128, 128, 0.4);
+        background-color: #00aacb;
+        float: right;
+        font-size: 0.88rem;
+        font-family: poppins;
+        color: white;
+        font-weight: normal;
+        border: transparent;
+        padding: 0.55rem 0.95rem;
+        display: flex;
+    }
+    
+    .main {
+        padding: 1.91rem;
+        font-family: Poppins;
+        color: #30363b;
+    }
+    
+    .project-details {
+        float: left;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        background-color: #ffffff;
+        width: 200px;
+        height: 6.67rem;
+        padding: 1rem;
+    }
+    
+    .projects-text {
+        font-size: 1rem;
+        height: 3.33rem;
+        padding-left: 0.714rem;
+    }
+    
+    .project-priority-text {
+        font-size: 1.66rem;
+        font-weight: 500;
+    }
+    
+    .hr-seperator {
+        border-top: 1px solid #eaeaea;
+        margin: 0 2.22rem;
+    }
+    
+    .project-filters {
+        margin-left: 0.89rem;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        float: right;
+        width: 35rem;
+        background: #ffffff;
+        height: 6.67rem;
+        padding: 1rem;
+    }
+    
+    .timesheet-section {
+        margin-top: 1.34rem;
+        margin-right: 0.892rem;
+        background: #ffffff;
+        width: 56rem;
+        padding: 1.11rem;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .data-sections {
+        display: inline-block
+    }
+    
+    .section-heading {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .rounded-rectangle {
+        border-radius: 5px;
+    }
+    
+    .add-task-button {
+        color: #00aacb;
+        font-size: 0.77rem;
+        font-weight: 500;
+        background-color: #ffffff;
+        border-radius: 0.27rem;
+        border: solid 0.05rem #efebe8;
+        font-family: poppins;
+    }
+    
+    .timesheet-operations {
+        float: right;
+    }
+    
+    .task-details {
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        padding: 1.11rem;
+        margin: 1.11rem 0;
+        position: relative;
+    }
+    
+    .edit-task, .show-task-details {
+        float: right;
+        top: 50%;
+    }
+    
+    .time-per-task {
+        margin-left: 70%;
+        font-size: 0.88rem;
+        display: flex;
+    }
+    
+    .horizontal-rule {
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .notification-title {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.44;
+    }
+    
+    .task-recipent {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .notifications {
+        background: #ffffff;
+        padding: 1.11rem;
+        min-height: 25.3rem;
+    }
+    
+    .notification-section {
+        width: 19.77rem;
+        float: right;
+    }
+    
+    .task-accomplished {
+        background-color: #f3fbfd;
+        border: solid 0.05rem #eaeaea;
+        position: relative;
+    }
+    
+    .task-details-text {
+        font-size: 0.88rem;
+    }
+    
+    .nav-logo {
+        float: left;
+        padding: 0.25rem 0;
+    }
+    
+    .nav-bar-item {
+        padding: 0rem 0.5rem;
+    }
+    
+    .due-time {
+        border-radius: 0.8rem;
+        width: max-content;
+        padding: 0.3rem;
+        float: right;
+        font-size: 0.77rem;
+    }
+    
+    .due-today {
+        background: #ea4b36;
+    }
+    
+    .due-later {
+        background: #b7c0cf;
+    }
+    
+    .done {
+        background: #34b86f;
+    }
+    
+    .remaining-points {
+        font-size: 0.72rem;
+    }
+    
+    .party-popper-left {
+        left: 0.35rem;
+    }
+    
+    .party-popper-right {
+        right: 0.35rem;
+    }
+    
+    .party-popper-left, .party-popper-right {
+        position: absolute;
+        bottom: 0.35rem;
+    }
+    
+    .cumulative-task-status {
+        padding: 0.55rem 2.37rem;
+    }
+    
+    .task-completed {
+        text-decoration: line-through;
+    }
+    
+    .project-name {
+        font-size: 0.94rem;
+        font-weight: 600;
+        display: inline-block;
+    }
+    
+    .date-range {
+        color: #3cbed7;
+    }
+    
+    #timesheet-duration {
+        color: #3cbed7;
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+    
+    .project-colour {
+        border-radius: 2.5px;
+        margin-right: 0.4rem;
+        margin-left: 1rem;
+    }
+    
+    .purple-color {
+        background-color: #9a52b6;
+        color: #9a52b6;
+    }
+    
+    .orange-color {
+        background-color: #f59900;
+        color: #f59900;
+    }
+    
+    .blue-color {
+        background-color: #2c97df;
+        color: #2c97df;
+    }
+    
+    .green-color {
+        background-color: #34b86f;
+        color: #34b86f;
+    }
+    
+    .today-section {
+        padding-top: 2rem;
+    }
+    
+    .section-subheading {
+        font-size: 0.72rem;
+    }
+    
+    .time-graph {
+        height: 0.61rem;
+        width: 5.55rem;
+        display: inline-block;
+    }
+    
+    .legends {
+        padding-top: 1rem;
+    }
+    
+    .graph-starting {
+        border-top-left-radius: 0.27rem;
+        border-bottom-left-radius: 0.27rem;
+    }
+    
+    .graph-ending {
+        border-top-right-radius: 0.27rem;
+        border-bottom-right-radius: 0.27rem;
+    }
+    
+    .legend-beginning {
+        margin-left: 0;
+    }
+    
+    .notification-content {
+        padding: 1rem 1.5rem;
+    }
+    
+    .notification-checkbox, .edit-task, .expand-task, .notification-detail-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    
+    .edit-task {
+        right: 2rem;
+    }
+    
+    .expand-task{
+        right: 1rem;
+    }
+    
+    .notification {
+        position: relative;
+    }
+    
+    .notification-checkbox {
+        left: 0;
+    }
+    
+    .nav-icons {
+        border-left: 0.1rem solid #eaeaea;
+        display: inline-block;
+        padding-left: 1rem;
+    }
+    
+    .progress-bar{
+        border-radius: 3px;
+        background-image: linear-gradient(272deg, #24cced 1%, #1f7c8e);
+        height: 6px;
+        width: 115px;
+        display: inline-block;
+        margin-left: 2.3rem;
+    }
+    
+    .search{
+        padding-right: 1.587rem;
+    }
+    
+    .submit-icon{
+        padding-right: 0.35rem;
+    }
+    
+    .project-timeline{
+        display: flex;
+    }
+    
+    .message-icon{
+        padding-right: 0.412rem;
+    }
+    
+    .switch-view{
+        font-size: 0.88rem;
+        padding-right: 1rem;
+    }
 }
-
-.page-title {
-    width: 100%;
-    height: 51px;
-    background-color: #101b33;
+/* Desktops and laptops ---------- */
+/*
+@media screen and (min-width: 720px){
+    .body {
+        background: #eaeaea;
+        font-size: 18px;
+        font-family: Poppins;
+    }
+    
+    .task-description {
+        font-size: 0.88rem;
+        display: flex;
+    }
+    
+    .header-nav {
+        padding-left: 2.38rem;
+        height: 2.567rem;
+        background-color: #ffffff;
+    }
+    
+    .nav-section {
+        float: right;
+        display: flex;
+        padding-right: 1.738rem;
+        padding-top: 0.4rem;
+    }
+    
+    .page-title {
+        padding: 1rem 2.38rem;
+        background-color: #101b33;
+    }
+    
+    .page-title-text {
+        font-weight: 500;
+        color: #e9edf0;
+    }
+    
+    .submit-timesheet-button {
+        border-radius: 21.5px;
+        box-shadow: 0.2px 3px 16.4px 1.6px rgba(128, 128, 128, 0.4);
+        background-color: #00aacb;
+        float: right;
+        font-size: 0.88rem;
+        font-family: poppins;
+        color: white;
+        font-weight: normal;
+        border: transparent;
+        padding: 0.55rem 0.95rem;
+        display: flex;
+    }
+    
+    .main {
+        padding: 1.91rem;
+        font-family: Poppins;
+        color: #30363b;
+    }
+    
+    .project-details {
+        float: left;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        background-color: #ffffff;
+        width: 300px;
+        height: 6.67rem;
+        padding: 1rem;
+    }
+    
+    .projects-text {
+        font-size: 1rem;
+        height: 3.33rem;
+        padding-left: 0.714rem;
+    }
+    
+    .project-priority-text {
+        font-size: 1.66rem;
+        font-weight: 500;
+    }
+    
+    .hr-seperator {
+        border-top: 1px solid #eaeaea;
+        margin: 0 2.22rem;
+    }
+    
+    .project-filters {
+        margin-left: 0.89rem;
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        float: right;
+        width: 35rem;
+        background: #ffffff;
+        height: 6.67rem;
+        padding: 1rem;
+    }
+    
+    .timesheet-section {
+        margin-top: 1.34rem;
+        margin-right: 0.892rem;
+        background: #ffffff;
+        width: 56rem;
+        padding: 1.11rem;
+        overflow: auto;
+        scroll-behavior: smooth;
+    }
+    
+    .data-sections {
+        display: inline-block
+    }
+    
+    .section-heading {
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    
+    .rounded-rectangle {
+        border-radius: 5px;
+    }
+    
+    .add-task-button {
+        color: #00aacb;
+        font-size: 0.77rem;
+        font-weight: 500;
+        background-color: #ffffff;
+        border-radius: 0.27rem;
+        border: solid 0.05rem #efebe8;
+        font-family: poppins;
+    }
+    
+    .timesheet-operations {
+        float: right;
+    }
+    
+    .task-details {
+        box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
+        padding: 1.11rem;
+        margin: 1.11rem 0;
+        position: relative;
+    }
+    
+    .edit-task, .show-task-details {
+        float: right;
+        top: 50%;
+    }
+    
+    .time-per-task {
+        margin-left: 70%;
+        font-size: 0.88rem;
+        display: flex;
+    }
+    
+    .horizontal-rule {
+        border-bottom: 1px solid #eaeaea;
+    }
+    
+    .notification-title {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.44;
+    }
+    
+    .task-recipent {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .notifications {
+        background: #ffffff;
+        padding: 1.11rem;
+        min-height: 25.3rem;
+    }
+    
+    .notification-section {
+        width: 19.77rem;
+        float: right;
+    }
+    
+    .task-accomplished {
+        background-color: #f3fbfd;
+        border: solid 0.05rem #eaeaea;
+        position: relative;
+    }
+    
+    .task-details-text {
+        font-size: 0.88rem;
+    }
+    
+    .nav-logo {
+        float: left;
+        padding: 0.25rem 0;
+    }
+    
+    .nav-bar-item {
+        padding: 0rem 0.5rem;
+    }
+    
+    .due-time {
+        border-radius: 0.8rem;
+        width: max-content;
+        padding: 0.3rem;
+        float: right;
+        font-size: 0.77rem;
+    }
+    
+    .due-today {
+        background: #ea4b36;
+    }
+    
+    .due-later {
+        background: #b7c0cf;
+    }
+    
+    .done {
+        background: #34b86f;
+    }
+    
+    .remaining-points {
+        font-size: 0.72rem;
+    }
+    
+    .party-popper-left {
+        left: 0.35rem;
+    }
+    
+    .party-popper-right {
+        right: 0.35rem;
+    }
+    
+    .party-popper-left, .party-popper-right {
+        position: absolute;
+        bottom: 0.35rem;
+    }
+    
+    .cumulative-task-status {
+        padding: 0.55rem 2.37rem;
+    }
+    
+    .task-completed {
+        text-decoration: line-through;
+    }
+    
+    .project-name {
+        font-size: 0.94rem;
+        font-weight: 600;
+        display: inline-block;
+    }
+    
+    .date-range {
+        color: #3cbed7;
+    }
+    
+    #timesheet-duration {
+        color: #3cbed7;
+        border: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+    }
+    
+    .project-colour {
+        border-radius: 2.5px;
+        margin-right: 0.4rem;
+        margin-left: 1rem;
+    }
+    
+    .purple-color {
+        background-color: #9a52b6;
+        color: #9a52b6;
+    }
+    
+    .orange-color {
+        background-color: #f59900;
+        color: #f59900;
+    }
+    
+    .blue-color {
+        background-color: #2c97df;
+        color: #2c97df;
+    }
+    
+    .green-color {
+        background-color: #34b86f;
+        color: #34b86f;
+    }
+    
+    .today-section {
+        padding-top: 2rem;
+    }
+    
+    .section-subheading {
+        font-size: 0.72rem;
+    }
+    
+    .time-graph {
+        height: 0.61rem;
+        width: 5.55rem;
+        display: inline-block;
+    }
+    
+    .legends {
+        padding-top: 1rem;
+    }
+    
+    .graph-starting {
+        border-top-left-radius: 0.27rem;
+        border-bottom-left-radius: 0.27rem;
+    }
+    
+    .graph-ending {
+        border-top-right-radius: 0.27rem;
+        border-bottom-right-radius: 0.27rem;
+    }
+    
+    .legend-beginning {
+        margin-left: 0;
+    }
+    
+    .notification-content {
+        padding: 1rem 1.5rem;
+    }
+    
+    .notification-checkbox, .edit-task, .expand-task, .notification-detail-button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+    
+    .edit-task {
+        right: 2rem;
+    }
+    
+    .expand-task{
+        right: 1rem;
+    }
+    
+    .notification {
+        position: relative;
+    }
+    
+    .notification-checkbox {
+        left: 0;
+    }
+    
+    .nav-icons {
+        border-left: 0.1rem solid #eaeaea;
+        display: inline-block;
+        padding-left: 1rem;
+    }
+    
+    .progress-bar{
+        border-radius: 3px;
+        background-image: linear-gradient(272deg, #24cced 1%, #1f7c8e);
+        height: 6px;
+        width: 115px;
+        display: inline-block;
+        margin-left: 2.3rem;
+    }
+    
+    .search{
+        padding-right: 1.587rem;
+    }
+    
+    .submit-icon{
+        padding-right: 0.35rem;
+    }
+    
+    .project-timeline{
+        display: flex;
+    }
+    
+    .message-icon{
+        padding-right: 0.412rem;
+    }
+    
+    .switch-view{
+        font-size: 0.88rem;
+        padding-right: 1rem;
+    }
 }
-
-.page-title-text {
-   
-    font-weight: 500;
-    color: #e9edf0;
-    padding: 15px;
-}
-
-.submit-timesheet-button {
-    border-radius: 21.5px;
-    box-shadow: 0.2px 3px 16.4px 1.6px rgba(128, 128, 128, 0.4);
-    background-color: #00aacb;
-    padding: 15px;
-    float: right;
-    margin-right: 5%;
-    margin-top: -2%;
-}
-
-.main {
-    margin: 45px;
-    font-family: Poppins;
-    color: #30363b;
-}
-
-.project-details {
-    float: left;
-    box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
-    background-color: #ffffff;
-}
-
-.projects-text {
-    padding: 30px;
-    font-size: 1rem;
-}
-
-.project-priority-text {
-    font-size: 1.66rem;
-    font-weight: 500;
-}
-
-.seperator {
-    border-top: 1px solid #eaeaea;
-    margin: 0px 40px;
-}
-
-.project-filters {
-    margin-left: 20px;
-    box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
-    float: right;
-}
-
-.time-spent-section {
-    width: 75%;
-}
-
-.timesheet-section {
-    margin-top: 30px;
-    margin-right: 20px;
-}
-
-.data-sections {
-    background-color: #ffffff;
-}
-
-.section-heading {
-    font-weight: 600;
-}
-
-.rounded-rectangle {
-    border-radius: 5px;
-}
-
-.add-task-button {
-    color: #00aacb;
-    font-size: 0.77rem;
-    font-weight: 500;
-    background-color: #ffffff;
-}
-
-.timesheet-operations {
-    float: right;
-}
-
-.task-details {
-    box-shadow: 0.1px 1px 4.1px 1px rgba(128, 128, 128, 0.16);
-}
-
-.edit-task, .show-task-details {
-    float: right;
-    top: 50%;
-}
-
-.time-per-task {
-    margin-left: 70%;
-}
-
-.horizontal-rule {
-    border-bottom: 1px solid #eaeaea;
-}
-
-.notification-title {
-    font-weight: 500;
-}
-
-.notification {
-    line-height: 1.44;
-    font-size: 1rem;
-}
-
-.notification-section {
-    padding: 20px;
-    width: 33%;
-}
-
-.task-accomplished {
-    background-color: #f3fbfd;
-}
-
-.task-details-text{
-    font-size: 0.88rem;
-}
+*/

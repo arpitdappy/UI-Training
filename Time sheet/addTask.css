@@ -1,0 +1,23 @@
+.add-task-section{
+    float: right;
+    height: 100%;
+    width: 21.74rem;
+}
+.sidebar-title{
+    padding: 1.11rem 1.91rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+    border: solid 1px #efebe8;
+    background-color: #e9edf0;
+}
+
+.sidebar-log{
+    background-color: #34b86f;
+    width: 100%;
+    padding-top: 1.11rem;
+    padding-bottom: 1.11rem; 
+}
+
+.close-add-task{
+    float: right;
+}

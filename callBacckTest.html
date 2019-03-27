@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Callback</title>
+</head>
+<body>
+<h3>Callback Usage</h3>
+
+<script type="text/javascript">
+function calculate(a, b, callback) {
+
+return callback(a,b);
+};
+
+function add (a,b){
+return a+b;
+}
+
+function subs(a,b){
+return a-b;
+}
+
+function timeoutFun(){
+setTimeout(function() {
+return 30;
+}, 1000);
+}
+
+function delayTest(we, callback){
+we=callback();
+console.log("value inside delay Test:"+we);
+}
+
+// function test(w){
+// console.log('Test '+w);
+// }
+
+// x= calculate(5, 5,add);
+// console.log(x);
+
+// y =calculate(5,5,subs);
+
+// console.log(y);
+var we=3;
+// delayTest(we, function(ret) {
+
+// console.log("value of test1: "+ ret);
+// });
+
+delayTest(we,timeoutFun);
+//test(we);
+
+
+
+
+</script>
+</body>
+</html>

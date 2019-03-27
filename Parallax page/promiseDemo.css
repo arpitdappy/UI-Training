@@ -1,0 +1,38 @@
+body {
+    font-size: 16px;
+}
+
+.countdown-section {
+    display: grid;
+    grid-template-columns: 10rem 50rem 10rem;
+    grid-template-rows: 30rem;
+    justify-content: center;
+    justify-items: center;
+}
+
+.first-half-countdown {
+    grid-column: 1/2;
+}
+
+.banner {
+    grid-column: 2/3;
+}
+
+.second-half-countdown {
+    grid-column: 3/4;
+}
+
+.timer-thumbnail-image {
+    height: 5rem;
+    width: 5rem;
+    display: none;
+}
+
+.banner-image{
+    height: 25rem;
+    width: 25rem;
+}
+
+.show{
+    display: block;
+}

@@ -1,0 +1,40 @@
+.tic-tac-toe-section {
+    display: grid;
+    grid-template-columns: 7rem 7rem 7rem;
+    grid-template-rows: 5rem 5rem 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-circle-icon {
+    display: none;
+}
+
+.hide-cross-icon {
+    display: none;
+}
+
+.tic-tac-block[value="-1"] .circle-icon {
+    visibility: hidden;
+}
+
+.tic-tac-block[value="1"] .cross-icon {
+    visibility: hidden
+}
+
+.tic-tac-block[value="1"] .circle-icon {
+    visibility: visible;
+}
+
+.tic-tac-block[value="-1"] .cross-icon {
+    visibility: visible
+}
+
+.tic-tac-block[value="BLANK"] .circle-icon, .tic-tac-block[value="BLANK"] .cross-icon {
+    visibility: hidden;
+}
+
+.tic-tac-block{
+    border: 1px solid red;
+    height: 100%;
+}
